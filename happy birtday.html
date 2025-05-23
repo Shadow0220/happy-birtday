@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="happy birtday.css" />
+    <title>Happy birthday</title>
+    <style>
+      .birthday-message {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        color: #ff69b4;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      .love-message {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        color: #ffb6c1;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-shadow: 1px 1px 3px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tiktok meowish -->
+    <canvas id="c"></canvas>
+
+    <div class="birthday-message">Happy birthday to you</div>
+    <div class="love-message">Stay with me forever, I love you</div>
+
+    <!-- مشغل الموسيقى -->
+    <audio id="bg-music" src="c:\Users\Dell\Downloads\Alan Walker - Faded.mp3" autoplay loop></audio>
+
+    <!-- تفعيل التشغيل بعد التفاعل -->
+    <script>
+      window.addEventListener('click', function () {
+        const music = document.getElementById('bg-music');
+        music.play();
+      }, { once: true });
+    </script>
+
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="er.robin"
+      data-description="Support me on Buy me a coffee!"
+      data-message=""
+      data-color="#BD5FFF"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"></script>
+
+    <script src="happy birtday.js"></script>
+  </body>
+</html>
